@@ -12,4 +12,4 @@
       systemd:
         name: tomcat
         state: restarted
-      become: no
+      become: true
