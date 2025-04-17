@@ -19,11 +19,12 @@ pipeline{
 				archiveArtifacts artifacts: 'target/MavenAnsibleWebapp1.war', fingerprint:true
 			}
 		}
-		stage('Deploy'){
-			steps{
-				sh 'ansible-playbook ansible/playbook.yml -i ansible/hosts.ini'
-			}
+		stage('Deploy') {
+		    steps {
+		        sh '/home/web3/anaconda3/bin/ansible-playbook ansible/playbook.yml -i ansible/hosts.ini'
+		    }
 		}
+
 	}
 }
 
