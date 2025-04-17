@@ -21,7 +21,7 @@ pipeline{
 		}
 		stage('Deploy'){
 			steps{
-				sh 'ansible-playbook ansible/playbook.yml -i ansible/hosts.ini -vvv'
+				sh 'ansible-playbook ansible/playbook.yml -i ansible/hosts.ini --ask-become-pass -vvv'
 			}
 		}
 	}
