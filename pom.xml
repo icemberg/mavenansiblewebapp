@@ -45,6 +45,6 @@
 <version>2.22.2</version>
 </plugin>
   </plugins>
-    <finalName>MavenAnsibleWebapp</finalName>
+    <finalName>MavenAnsibleWebapp1</finalName>
   </build>
 </project>
