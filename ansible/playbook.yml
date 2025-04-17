@@ -1,8 +1,6 @@
 - name: Deploy to Tomcat
   hosts: web
   become: yes
-  vars:
-    ansible_become_password: "server123"
   tasks:
     - name: Copy WAR file to Tomcat
       copy:
